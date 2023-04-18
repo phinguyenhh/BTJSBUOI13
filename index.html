@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Exercise 1 -->
+    <div class="container pt-5">
+        <form class="w-50">
+            <h1 style="color: red;">Exercise 1</h1>
+            <div class="form-group">
+                <label for="">Nhập lương một ngày làm</label>
+              <input type="text" class="form-control" id="salaryPerDay" placeholder="Nhập lương ngày">
+            </div>
+            <div class="form-group">
+                <label for="">Nhập số ngày làm</label>
+              <input type="text" class="form-control" id="days" placeholder="Nhập số ngày làm">
+            </div>          
+         
+            <button type="button" class="btn btn-primary" id="btn" onclick="click1()">Tính lương</button>
+          </form>
+          <p class="alert alert-danger mt-2 py-3 w-50" id="result1"></p>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div class="container pt-5">
+        <form class="w-50">
+            <h1 style="color: red;">Exercise 2</h1>
+            <div class="form-group">
+                <label for="">Nhập số lượng con số</label>
+                
+                <input type="text" class="form-control" id="input2" placeholder="Nhập số lượng">
+              </div>
+                <button type="button" class="btn btn-primary my-2" onclick="click2_1()">Okay</button>
+              <div id="form-group" class="form-group">
+              </div>              
+          </form>
+          <p class="alert alert-danger mt-2 py-3 w-50" id="result2"></p>
+    </div>
+
+    <!-- Exercise 3 -->
+    <div class="container pt-5">
+      <form class="w-50">
+          <h1 style="color: red;">Exercise 3</h1>
+          <div class="form-group">
+              <label for="">Nhập số tiền cần đổi (USD)</label>
+              
+              <input type="text" class="form-control" id="money" placeholder="Nhập số tiền (USD)">
+              <button type="button" class="btn btn-primary my-2" onclick="click3()">Đổi</button>
+          
+            </div>              
+      
+        </form>
+        <p class="alert alert-danger mt-2 py-3 w-50" id="result3"></p>
+  </div>
+
+    <!-- Exercise 4 -->
+    <div class="container pt-5">
+      <form class="w-50">
+          <h1 style="color: red;">Exercise 4</h1>
+          <div class="form-group">
+              <label for="">Nhập nhập chiều dài</label>              
+              <input type="text" class="form-control" id="length" placeholder="Nhập chiều dài">
+          </div>    
+          <div class="form-group">
+            <label for="">Nhập nhập chiều rồng</label>              
+            <input type="text" class="form-control" id="width" placeholder="Nhập chiều rộng">
+        </div>    
+
+              <button type="button" class="btn btn-primary my-2" onclick="click4()">Tính</button>
+                    
+      
+        </form>
+        <p class="alert alert-danger mt-2 py-3 w-50" id="result4"></p>
+  </div>
+
+    <!-- Exercise 5 -->
+    <div class="container pt-5">
+      <form class="w-50">
+          <h1 style="color: red;">Exercise 5</h1>
+          <div class="form-group">
+              <label for="">Nhập số có 2 chữ số</label>              
+              <input type="text" class="form-control" id="number" placeholder="Nhập số 2 chữ số">
+          </div>    
+             
+
+              <button type="button" class="btn btn-primary my-2" onclick="click5()">Tính</button>
+                    
+      
+        </form>
+        <p class="alert alert-danger mt-2 py-3 w-50" id="result5"></p>
+  </div>
+
+
+
+
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
