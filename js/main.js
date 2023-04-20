@@ -9,7 +9,12 @@
 function click1() {
     var salaryPerDay = document.getElementById("salaryPerDay").value
     var day = document.getElementById("days").value
-    document.getElementById("result1").innerHTML = "Lương:" + ' ' + (salaryPerDay * day).toLocaleString()
+    if (salaryPerDay | salaryPerDay && day | day) {
+        document.getElementById("result1").innerHTML = "Lương:" + ' ' + (salaryPerDay * day).toLocaleString()
+
+    } else {
+        document.getElementById("result1").innerHTML = "Vui lòng nhập đúng cú pháp"
+    }
 }
 // Exercise 2
 // Khối 1: input:số lượng con số , giá trị các con số
@@ -63,7 +68,11 @@ function click2() {
 // Khối 3: output: result(giá tiền đã dổi)
 function click3() {
     var money = document.getElementById("money").value
-    document.getElementById("result3").innerHTML = (money * 23500).toLocaleString();
+    if (money | money) {
+        document.getElementById("result3").innerHTML = (money * 23500).toLocaleString() + "VND";
+    } else {
+        document.getElementById("result3").innerHTML = "Vui lòng nhập đúng cú pháp"
+    }
 }
 
 // EXERCISE 4
@@ -79,8 +88,11 @@ function click4() {
 
     var area = length * width
     var perimeter = (Number(length) + Number(width)) * 2
-
-    document.getElementById("result4").innerHTML = "Diện tích:" + area + "</br>" + "Chu vi:" + perimeter
+    if (length | length && width | width) {
+        document.getElementById("result4").innerHTML = "Diện tích:" + area + "</br>" + "Chu vi:" + perimeter
+    } else {
+        document.getElementById("result4").innerHTML = "Vui lòng nhập đúng cú pháp"    
+    }
 }
 
 // EXERCISE 5
@@ -96,5 +108,9 @@ function click5() {
     var ones = number % 10
     var tens = Math.floor(number / 10)
     var sum = Number(ones) + Number(tens)
-    document.getElementById("result5").innerHTML = "Tổng 2 chữ số là:" + sum
+    if ( sum | sum && number >= 10 && number < 100 ) {
+        document.getElementById("result5").innerHTML = "Tổng 2 chữ số là:" + sum
+    } else {
+        document.getElementById("result5").innerHTML = "Vui lòng nhập đúng cú pháp"   
+    }
 }
