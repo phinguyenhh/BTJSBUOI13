@@ -53,7 +53,7 @@ function click2() {
         var avg = total / Number(number)
      
     }
-    if (avg | avg) {
+    if (avg | avg && numbers != '') {
         document.getElementById("result2").innerHTML = avg
         
     } else {
