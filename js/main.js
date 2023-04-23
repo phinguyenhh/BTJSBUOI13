@@ -9,7 +9,7 @@
 function click1() {
     var salaryPerDay = document.getElementById("salaryPerDay").value
     var day = document.getElementById("days").value
-    if (salaryPerDay | salaryPerDay && day | day && salaryPerDay>0 && day >0) {
+    if (salaryPerDay>0 && day >0) {
         document.getElementById("result1").innerHTML = "Lương:" + ' ' + (salaryPerDay * day).toLocaleString()
 
     } else {
@@ -30,9 +30,9 @@ function click2_1() {
     document.getElementById("form-group").innerHTML = ''
 
     var number = document.getElementById("input2").value
-    if (number | number && number > 0) {
+    if (number > 0) {
         for (i = 1; i <= Number(number); ++i) {
-            document.getElementById("form-group").insertAdjacentHTML("beforeend", `<label for=''>Nhập số thứ ${i} </label> <input type='text' class='form-control my-2 col-xl-3' id='number${i}' placeholder='Nhập số thứ ${i}'>`
+            document.getElementById("form-group").insertAdjacentHTML("beforeend", `<label for=''>Nhập số thứ ${i} </label> <input type='number' class='form-control my-2 col-xl-3' id='number${i}' placeholder='Nhập số thứ ${i}'>`
 
             );
         }
@@ -68,7 +68,7 @@ function click2() {
 // Khối 3: output: result(giá tiền đã dổi)
 function click3() {
     var money = document.getElementById("money").value
-    if (money | money && money > 0 ) {
+    if (money > 0 ) {
         document.getElementById("result3").innerHTML = (money * 23500).toLocaleString() + "VND";
     } else {
         document.getElementById("result3").innerHTML = "Vui lòng nhập đúng cú pháp"
@@ -88,7 +88,7 @@ function click4() {
 
     var area = length * width
     var perimeter = (Number(length) + Number(width)) * 2
-    if (length | length && width | width && length > 0 && width > 0) {
+    if (length > 0 && width > 0) {
         document.getElementById("result4").innerHTML = "Diện tích:" + area + "</br>" + "Chu vi:" + perimeter
     } else {
         document.getElementById("result4").innerHTML = "Vui lòng nhập đúng cú pháp"    
@@ -108,9 +108,10 @@ function click5() {
     var ones = number % 10
     var tens = Math.floor(number / 10)
     var sum = Number(ones) + Number(tens)
-    if ( sum | sum && number >= 10 && number < 100 ) {
+    if ( number >= 10 && number < 100 ) {
         document.getElementById("result5").innerHTML = "Tổng 2 chữ số là:" + sum
     } else {
         document.getElementById("result5").innerHTML = "Vui lòng nhập đúng cú pháp"   
     }
 }
+
